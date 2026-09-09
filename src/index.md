@@ -45,4 +45,8 @@ features:
     title: Custom Domains
     details: Map a tenant's own domain to their store subdomain with CNAME, no extra plugins required.
     link: /domains/cname-mapping
+  - icon: 📱
+    title: Mobile App Requests
+    details: How a tenant requests a mobile app, and how the super admin reviews it, raises a build ticket, and delivers the download links.
+    link: /mobile-app/requesting-an-app
 ---
