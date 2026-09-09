@@ -127,6 +127,14 @@ export default defineConfig({
           { text: "CNAME Mapping", link: "/domains/cname-mapping" },
         ],
       },
+      {
+        text: "Mobile App Requests",
+        collapsed: false,
+        items: [
+          { text: "Requesting an App", link: "/mobile-app/requesting-an-app" },
+          { text: "Managing App Requests", link: "/mobile-app/managing-app-requests" },
+        ],
+      },
     ],
   },
 });
