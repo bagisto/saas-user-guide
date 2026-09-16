@@ -8,6 +8,7 @@ Tenants can ask the platform to build a mobile app for their store. The tenant s
 - What to prepare before starting a request
 - How a tenant submits an app request
 - What happens after the request is submitted
+- How to talk to the platform about a request
 :::
 
 ## Before you begin
@@ -24,7 +25,7 @@ Have these ready. The form cannot be saved as a draft — once submitted it lock
 - **Firebase project** — the project details.
 
 ::: warning One open request per platform
-A tenant cannot raise a second request covering a platform that already has one open. Wait for the first to be completed or rejected.
+A tenant cannot raise a second request covering a platform that already has one open. Wait for the first to be completed or canceled.
 :::
 
 ## Step 1 — Open My Apps
@@ -75,11 +76,13 @@ Uploaded images are the one thing that cannot be restored — no browser allows 
 
 ## Step 3 — The request is submitted
 
-You return to **My Apps** and the request appears as **Pending**. Opening it shows everything that was submitted, including the generated images. Credentials are shown only as **Stored** — for security they cannot be read back, though they can be replaced.
+You return to **My Apps** and the request appears as **Open**. Opening it shows everything that was submitted, including the generated images. Credentials are shown only as **Stored** — the tenant cannot read them back, though they can be replaced.
 
-<ImagePopup src="/images/requesting-an-app/tenant-request-pending.png" alt="Submitted request detail" />
+<ImagePopup src="/images/requesting-an-app/tenant-req-show.png" alt="Submitted request detail" />
 
 At this point the form is locked. Nothing more is needed from the tenant unless a correction is requested.
+
+An open request can still be withdrawn: the **Delete** action stays on the row in **My Apps** while the request is open, and disappears once it is completed or canceled.
 
 ## Step 4 — Get the app
 
@@ -87,20 +90,30 @@ When the build is ready the tenant is e-mailed, and the download links appear on
 
 A request for one platform gets one link. A request covering **both** gets two — an `.apk` or `.aab` for Android and an App Store link for iOS — each labelled with its platform.
 
-<ImagePopup src="/images/requesting-an-app/tenant-download.png" alt="Download links on the completed request" />
+<ImagePopup src="/images/requesting-an-app/download-app.png" alt="Download links on the completed request" />
 
 The tenant shares the links with their customers, and uploads the same build to their own Play Console or App Store Connect account.
 
 ## If a correction is requested
 
-While a request is **Pending**, the super admin can ask for a correction on a single field. The request stays Pending and **only that field reopens** for editing — everything else remains locked. The tenant is e-mailed with the reason, updates that one field, and saves.
+While a request is **Open**, the super admin can ask for a correction on a single field. The request stays Open and **only that field reopens** for editing — everything else remains locked. The tenant is e-mailed with the reason, updates that one field, and saves.
+
+## Messaging the platform
+
+Every request carries a **Messages** thread the tenant shares with the platform team. Use it for anything that is not a field correction — a question about an account, a screenshot, a note about timing.
+
+- Both sides see every message, with who wrote it and when.
+- Files can be attached: up to 5 per message, 10 MB each (PNG, JPG, PDF, ZIP, TXT, JSON, CSV, DOC, DOCX, XLS, XLSX).
+- The platform is e-mailed that a message is waiting, and the tenant is e-mailed when it replies. Attachments stay in the panel and are never e-mailed.
+- The thread closes for new messages once the request is completed or canceled, and stays readable.
+
+<ImagePopup src="/images/requesting-an-app/message-req.png" alt="Message" />
 
 ## Statuses
 
-- **Pending** — the request has been submitted and the form is locked.
-- **Processing** — the platform team has started the build.
+- **Open** — the request has been submitted and the form is locked. It can still be withdrawn, corrections can be requested on it, and the Messages thread is live.
 - **Completed** — the download links are recorded and the tenant has been e-mailed.
-- **Rejected** — the request was declined, with a reason the tenant can read.
+- **Canceled** — the platform stopped the request, with a reason the tenant can read.
 
 ::: tip
 The super admin never sees a tenant's request until it is submitted, and a tenant never sees another tenant's requests. Every request is scoped to the store that raised it.
