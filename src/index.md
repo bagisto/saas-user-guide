@@ -23,15 +23,15 @@ features:
     link: /super-admin/dashboard
   - icon: 🔁
     title: Subscriptions
-    details: Build subscription plans with limits and offers, track purchased plans and invoices, and let tenants subscribe and pay.
+    details: Build subscription plans with limits, themes and offers, run free trials, track purchased plans and invoices, and let tenants subscribe, upgrade and downgrade.
     link: /subscriptions/plan-management
   - icon: ⚙️
     title: Settings
-    details: Platform staff (agents) and roles, currencies and exchange rates, webhooks, super admin themes, and tenant email broadcasts.
+    details: Platform staff (agents) and roles, currencies and exchange rates, signed webhooks with delivery logs, and tenant email broadcasts.
     link: /settings/agents-and-roles
   - icon: 📝
-    title: Content & Configuration
-    details: CMS pages and platform-wide configuration for design, payments, trials, and automated subscription emails.
+    title: Appearance, Content & Configuration
+    details: The landing page section editor, CMS pages, and platform-wide configuration for branding, SEO, maintenance mode, payments, trials, and automated subscription emails.
     link: /content/cms-pages
   - icon: 🏬
     title: Tenants
@@ -39,7 +39,7 @@ features:
     link: /tenants/registration
   - icon: 🎨
     title: Storefront Themes
-    details: Premium designs unlocked by the subscription plan — Breeze, Fashion, Commercia and Adornments.
+    details: Premium designs unlocked per plan — Breeze, Fashion, Commercia and Adornments — activated and customized from Appearance with a live preview.
     link: /tenants/storefront-themes
   - icon: 🌐
     title: Custom Domains

@@ -89,6 +89,7 @@ export default defineConfig({
           { text: "Plan Management", link: "/subscriptions/plan-management" },
           { text: "Purchased Plans & Invoices", link: "/subscriptions/purchased-plans" },
           { text: "Tenant Billing", link: "/subscriptions/tenant-billing" },
+          { text: "Plan Changes, Trials & Renewals", link: "/subscriptions/plan-changes" },
         ],
       },
       {
@@ -98,8 +99,14 @@ export default defineConfig({
           { text: "Agents & Roles", link: "/settings/agents-and-roles" },
           { text: "Currencies & Exchange Rates", link: "/settings/currencies-and-exchange-rates" },
           { text: "Webhooks", link: "/settings/webhooks" },
-          { text: "Themes", link: "/settings/themes" },
           { text: "Send Email", link: "/settings/send-email" },
+        ],
+      },
+      {
+        text: "Appearance",
+        collapsed: false,
+        items: [
+          { text: "Landing Page Themes", link: "/appearance/themes" },
         ],
       },
       {
