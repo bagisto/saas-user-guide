@@ -32,13 +32,14 @@ Everything else in this guide — panels, plans, tenants, and settings — works
 The super admin is the top authority on the platform. From the Super Admin panel you can:
 
 - **Manage tenants** — register merchants, view their store insights, edit them, and sign in as any tenant. See [Tenant Management](/super-admin/tenant-management).
-- **Sell subscriptions** — create plans, track purchased plans, and review invoices. See [Plan Management](/subscriptions/plan-management).
-- **Run the platform** — manage agents and roles, currencies, exchange rates, webhooks, and themes. See [Agents & Roles](/settings/agents-and-roles).
+- **Sell subscriptions** — create plans, offer a free trial, track purchased plans, and review invoices. See [Plan Management](/subscriptions/plan-management).
+- **Run the platform** — manage agents and roles, currencies, exchange rates, and webhooks. See [Agents & Roles](/settings/agents-and-roles).
+- **Design the landing page** — build the public page prospective merchants see, section by section, with a live preview. See [Landing Page Themes](/appearance/themes).
 - **Publish content** — manage CMS pages and platform-wide configuration. See [CMS Pages](/content/cms-pages).
 
 ## What a tenant does
 
-A tenant signs up, gets a storefront and admin panel provisioned automatically, and starts selling. A merchant manages products, categories, orders, and customers, chooses a storefront theme allowed by their plan, and reviews their own subscription and invoices. See [Registration & Sign-in](/tenants/registration).
+A tenant signs up, gets a storefront and admin panel provisioned automatically, and starts selling, guided by a store setup checklist. A merchant manages products, categories, orders, and customers, activates and customizes a storefront theme allowed by their plan, and manages their own subscription — upgrades, downgrades, and invoices. See [Registration & Sign-in](/tenants/registration).
 
 ::: tip
 New to the platform? If you run the SaaS, start with the [Super Admin Dashboard](/super-admin/dashboard). If you're a merchant setting up a store, start with [Registration & Sign-in](/tenants/registration).
